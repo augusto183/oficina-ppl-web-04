@@ -18,7 +18,7 @@
         .container {
             justify-content: center;
             align-items: center;
-            flex-wrap: 5;
+            flex-wrap: wrap;
             display: flex;
             width: 40rem;
             min-height: 25rem;
@@ -33,7 +33,7 @@
             text-align: center;
             width: 8rem;                          
             height: 8rem;
-            border-radius: .5rem;
+            border-radius: 100%;
             padding: 1rem;
             font-weight: bold;
             margin: 1rem;
@@ -43,7 +43,7 @@
     </style>
 </head>
 <body>
-    <h1>Estrutura de Repetição: while </h1>
+    <h1>Estrutura de Repetição: do-while </h1>
     <div class="container">
     <script>
         /*
@@ -53,10 +53,11 @@
         */
         var i = 0, num = parseInt(prompt("Informe um número:"));
 
-        while (i < num) {            
-            document.write(`<div class="mensagem">Valor de i" ${i}</div>`);
+        do {            
+            document.write(`<div class="mensagem"> ${i}</div>`);
             i++;
-        }
+
+        }while (i < num);
 
     </script>
     </div>
